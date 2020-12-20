@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   display: flex;
-  flex-direction: column;
   /* horizontally centered */
   align-items: center;
   /* vertically centered, needs to have height to work */
@@ -15,4 +14,21 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+}
+
+.bg {
+  background: url('https://images.unsplash.com/photo-1603833809185-179adaf3c20c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')
+    no-repeat center center/cover;
+  position: absolute;
+  /* to remove white coloring at edges in the blur: from top to height  */
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -1;
+  filter: blur(0px);
+}
+
+.loading-text {
+  font-size: 50px;
 }
